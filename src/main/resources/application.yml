@@ -1,22 +1,8 @@
 spring:
   application:
     name: ai-sample
-  datasource:
-    url: jdbc:mysql://localhost:3306/facility?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
-    username: root
-    password: root
-  jpa:
-    hibernate:
-      ddl-auto: none
-    open-in-view: false
-    properties:
-      hibernate:
-        format_sql: true
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          issuer-uri: http://localhost:9000
+  profiles:
+    active: local
 
 management:
   endpoints:
