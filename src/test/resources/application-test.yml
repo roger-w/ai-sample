@@ -6,10 +6,14 @@ spring:
     password:
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: create-drop
     open-in-view: false
   security:
     oauth2:
       resourceserver:
         jwt:
           jwk-set-uri: http://localhost:9999/.well-known/jwks.json
+
+app:
+  security:
+    oauth2-enabled: false

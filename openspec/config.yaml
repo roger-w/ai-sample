@@ -1,0 +1,12 @@
+schema: spec-driven
+
+context: |
+  Project: ai-sample
+  Stack: Spring Boot 3.x, Maven, Java 17, JPA
+  Security: OAuth2 Resource Server in prod profile
+  Testing: JUnit 5, Spring Boot Test
+
+rules:
+  specs:
+    - Keep scenarios in GIVEN/WHEN/THEN format.
+    - Include request/response behavior and error scenarios.
